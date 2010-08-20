@@ -3,11 +3,7 @@ require 'hpricot'
 class JumpPageExtension < Radiant::Extension
   version "1.0"
   description "Provides a 'jump page' for all external links from your radiant site."
-  url "http://github.com/mikehale/radiant-jump_page-extension"
-
-  define_routes do |map|
-    map.connect 'jump/:title/*url', :controller => '/jump_page'
-  end
+  url "http://github.com/mikehale/radiant-jump-page-extension"
 
   def activate
     String.class_eval do
